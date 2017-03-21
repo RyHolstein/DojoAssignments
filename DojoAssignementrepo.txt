@@ -7,3 +7,4 @@ git push -u origin master git status
 touch DojoAssignementrepo.txt
 git add DojoAssignementrepo.txt
 git commit -m "added DojoAssignementrepo.txt"
+git push origin
