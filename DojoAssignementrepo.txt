@@ -1,0 +1,7 @@
+cd Desktop
+cd DojoAssignments
+git init
+git add .
+git remote add origin https://github.com/Terrymillz/DojoAssignments.git
+git push -u origin master git status
+touch DojoAssignementrepo.txt
