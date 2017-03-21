@@ -1,0 +1,33 @@
+Ryans-MacBook-Pro:DojoAssignments RyanHolstein$ ls -R
+MEAN		WebFundementals	netCore
+Python		iOS		ruby
+
+./MEAN:
+about.txt
+
+./Python:
+about.txt
+
+./WebFundementals:
+CSS		Git		HTML		Javascript	about.txt
+
+./WebFundementals/CSS:
+about.txt
+
+./WebFundementals/Git:
+about.txt
+
+./WebFundementals/HTML:
+about.txt		indentation.html
+
+./WebFundementals/Javascript:
+about.txt
+
+./iOS:
+about.txt
+
+./netCore:
+about.txt
+
+./ruby:
+about.txt
