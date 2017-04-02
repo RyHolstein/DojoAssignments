@@ -1,0 +1,220 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  font: Arial;
+}
+.wrap {
+  width: 1000px;
+  min-height: 500px;
+  background-color: #1A1A1A;
+}
+
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #1A1A1A;
+  position: relative;
+  margin-bottom: 0px;
+}
+.header img {
+  display: inline-block;
+  position: relative;
+  left: 2%;
+  top:13%;
+}
+.header p {
+  color: #D2D2D3;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  position: relative;
+  right: 2%;
+  font-size: .9em;
+}
+
+.nav {
+  width: 100%;
+  height: 50;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 1em;
+  border-right: 2px solid grey;
+  padding-right:20px;
+  color: #A1A1A0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+.nav li {
+  display: inline;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.nav ul {
+  background: linear-gradient(#525252, #262626);
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+.slideshow {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 0px;
+}
+
+.slideshow img {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  border-bottom: 5px solid #3B3B3B;
+}
+
+
+
+
+.info {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  background-color: #1A1A1A;
+  text-align: center;
+}
+.info img {
+  display: inline-block;
+  margin-bottom: 20px;
+  vertical-align: top;
+  position: relative;
+  top: 15%;
+}
+.words {
+  width: 19%;
+  height: 150px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+.words h2 {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0px;
+  width: 150px;
+  font-size: 1.1em;
+  margin-bottom: 0px;
+  position: relative;
+  top:50%;
+  color: #D88642;
+}
+.words p {
+  color: white;
+  margin-top: 0px;
+  font-size: .9em;
+}
+
+
+
+.buy {
+  width: 100%;
+  min-height: 150px;
+  position: relative;
+  background-color: black;
+
+}
+.buy h1{
+  display: inline-block;
+  width: 700px;
+  margin: 0px;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: white;
+  font-size: 1.3em;
+
+}
+.buy p {
+  display: inline-block;
+  margin-top: 0px;
+  width: 700px;
+  margin-left: 30px;
+  color: white;
+  font-size: .8em;
+
+}
+.buy a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5em;
+  position: relative;
+  left: 8%;
+  top: -5px;
+  color: white;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: linear-gradient(#EEBB94, #E98944);
+  border-radius: 5px;
+}
+
+
+
+.portfolioHead {
+  width: 100%;
+  height: 50px;
+  background-color: #1A1A1A;
+
+}
+.portfolioHead h2 {
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+}
+
+.portfolioHead p {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  color: #D88642;
+}
+
+
+
+.portfolio {
+  width: 100%;
+  height: 375px;
+  position: relative;
+  background-color: #1A1A1A;
+}
+.portfolio img {
+  width: 22%;
+  display: inline;
+  margin: 10px;
+  border: 2px solid #363636;
+}
+.last {
+   position: absolute;
+   right:1%;
+   top: .2%;
+}
+
+.portfolio .words {
+margin-left: 10px;
+margin-right: 45px;
+}
+.portfolio a {
+  text-decoration: none;
+  color: #5C5D5C;
+  font-size: .8em;
+  float: right;
+  vertical-align: bottom;
+  position: relative;
+  bottom: -10%;
+  right: 2%
+
+}

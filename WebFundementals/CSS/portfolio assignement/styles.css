@@ -1,0 +1,147 @@
+.wrapper {
+  width: 1200px;
+  padding: 0px;
+  background: radial-gradient(#6F5964, #65505A, #1D0C11);
+}
+
+.header {
+  display: inline-block;
+  background-color: #F5F5F5;
+  height: 60px;
+  width: 1200px;
+  margin-bottom: 10px;
+  vertical-align: top;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.header h1 {
+  display: inline-block;
+  font-size: 40px;
+  margin: 0px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.header h3 {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  font-size: 25px;
+}
+.picture {
+  outline: 5px solid #C0C0C0;
+  display: inline-block;
+  height: 328px;
+  width: 500px;
+  margin: 30px;
+  vertical-align: top;
+}
+
+#mePhoto {
+  width: 100%;
+}
+
+.about {
+  display: inline-block;
+  height: 328px;
+  width: 500px;
+  margin: 30px;
+  vertical-align: top;
+  background: linear-gradient(to bottom right, #FFFFFF, #DACBD9);
+}
+
+.about p {
+  padding-left: 10px;
+  font-size: 17px;
+}
+.about a {
+  padding-left: 10px;
+  font-size: 17px;
+  color: black;
+}
+.column {
+  display: inline-block;
+  width: 312px;
+  height: 665px;
+  margin: 30px;
+  background: linear-gradient(to bottom right, #FFFFFF, #DACBD9);
+}
+
+.footer {
+  display: block;
+  background-color: #F5F5F5;
+  min-height: 60px;
+  width: 1200px;
+  margin-top: 30px;
+  vertical-align: top;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+  background: linear-gradient(#B4B4B7, #878593, #B4B4B7);
+  display: block;
+  height: 40px;
+  margin: 0px;
+  text-indent: 20px;
+  padding-top: 10px;
+  color: white;
+
+
+}
+
+.smallpics {
+  width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  width: 45px;
+  margin: 5px;
+}
+.column p {
+  display: block;
+  height: 150px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-align: justify;
+  margin-top: 5px;
+
+}
+.bottom {
+  margin-bottom: 18px;
+}
+
+.link{
+  text-align: center;
+}
+.column a {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  background-color: #407D61;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 1px #888888;
+}
+ .iconset {
+   padding-left: 10px;
+ }
+
+ .footer img {
+   width: 25px;
+   vertical-align: bottom;
+ }
+
+.footer p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  font-size: 20px;
+  color: black;
+  vertical-align: top;
+}

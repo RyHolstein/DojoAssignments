@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  font-size: 2em;
+}
+span {
+  color:red
+}
+#click {
+  margin-bottom: 50px;
+  border-bottom: 5px solid black;
+}
+#disappearbutton {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#dms {
+  width:100px;
+}
+#dm1 {
+  width:100px;
+}
+#datboi {
+  width:100px;
+}
+#thegoat {
+  display: none;
+}
+.highlight {
+  background-color: yellow;
+  color: red;
+}

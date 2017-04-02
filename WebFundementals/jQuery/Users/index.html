@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>users</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+      $('button').click(function(){
+        var t1 = $('#first').val();
+        var t2 = $('#last').val();
+        var t3 = $('#email').val();
+        var t4 = $('#contact').val();
+        var nr = $('<tr><td>' + t1 + '</td><td>' + t2 + '</td><td>' + t3 + '</td><td>' + t4 + '</td></tr>');
+        $('table').append(nr);
+        return false;
+      })
+    });
+
+
+
+    </script>
+  </head>
+  <body>
+    <table id="list">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Contact #</th>
+        </tr>
+    </table>
+
+
+    <h1>Add User</h1>
+    <div class="formMain">
+      <form class="form1">
+        <p>First Name:</p>
+        <input type="text" id="first" placeholder="Name">
+        <br>
+        <p>Last Name:</p>
+        <input type="text" id="last" placeholder="Name">
+        <br>
+        <p>Email:</p>
+        <input type="text" id="email" placeholder="Email">
+        <br>
+        <p>Contact #:</p>
+        <input type="text" id="contact" placeholder="#">
+        <br>
+        <button>Add</button>
+      </form>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+.house-wrap {
+  text-align: center;
+  width: 1000px;
+}
+.pic {
+  /*outline: 5px solid black;*/
+  display:inline-block;
+  height:200px;
+  width:200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  vertical-align: top;
+}
+
+.house-info {
+  /*outline: 5px solid black;*/
+  display:block;
+  height:500px;
+  width:500px;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  left: calc(50% - 250px);
+  padding-top: 50px;
+}
+.pic img {
+  width: 100%;
+}

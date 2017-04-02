@@ -1,0 +1,30 @@
+.form {
+  width:300px;
+  outline: 2px solid black;
+}
+.form1 p {
+  display: inline;
+}
+.form1 input {
+  display: inline;
+}
+.left{
+  display: inline-block;
+  outline: 2px solid blue;
+  vertical-align: top;
+}
+.right {
+  display: inline-block;
+  outline: 2px solid red;
+  width: 700px;
+  min-height: 400px;
+}
+.card {
+  outline: 2px solid yellow;
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  vertical-align: top;
+  padding:50px;
+}

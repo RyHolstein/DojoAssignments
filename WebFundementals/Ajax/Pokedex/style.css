@@ -1,0 +1,58 @@
+body {
+  /*background-color: black;*/
+}
+
+.pokemon-list {
+  width:60%;
+  display: inline-block;
+  vertical-align: top;
+}
+.pokedex {
+  background-image: url('pokedex.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 800px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+  text-align: left;
+  position: fixed;
+  margin: 0px;
+
+}
+.pokedex h1 {
+  font-size: 1em;
+  margin: 0px;
+  position: relative;
+  left: 150px;
+  top: 150px;
+}
+.pokedex h3 {
+  font-size: 1em;
+  margin: 0px;
+  position: relative;
+  left: 150px;
+  top: 150px;
+}
+.pokedex p {
+  font-size: 1em;
+  margin: 0px;
+  position: relative;
+  left: 150px;
+  top: 150px;
+}
+.pokedex img {
+  font-size: 1em;
+  margin: 0px;
+  position: relative;
+  left: 150px;
+  top: 150px;
+}
+.pokedex ul {
+  font-size: 1em;
+  margin: 0px;
+  position: relative;
+  left: 150px;
+  top: 150px;
+}
