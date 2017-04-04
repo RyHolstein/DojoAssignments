@@ -1,6 +1,6 @@
 
 def tl(x):
-    summ = ''
+    summ = 0
     string = ''
     if (all(isinstance(i, int) for i in x)):
         print "The array you entered is of integer type"
