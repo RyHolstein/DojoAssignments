@@ -1,0 +1,21 @@
+form {
+  display: inline-block;
+}
+
+h1 {
+  color: blue;
+}
+
+.this_form {
+  /*outline: 5px solid black;*/
+  width: 300px;
+  length: 300px;
+  text-align: left;
+  display: inline-block;
+}
+body {
+  text-align: center;
+}
+.f1 button {
+  text-align: left !important;
+}
