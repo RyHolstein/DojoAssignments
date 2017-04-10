@@ -10,6 +10,13 @@
     <h1>hello everyone</h1>
     <div class="this_form">
         <form action="/result" method="post">
+          {% with messages = get_flashed_messages() %}
+             {% if messages %}
+               {% for message in messages %}
+                 <p>{{message}}</p>
+               {% endfor %}
+             {% endif %}
+           {% endwith %}
           Your Name: <input type="text" name="name">
           <br>
           Dojo Location:<select name="location">
