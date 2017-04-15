@@ -47,6 +47,6 @@ def game():
             session['log'] += '<p class="loser"> You entered a Casino and Lost ' + str(cave_gold) + ' at ' + time + '</p>'
 
 
-    return render_template('index.html', gold_num = gold_num)
+    return redirect('/')
 
 app.run(debug=True)
