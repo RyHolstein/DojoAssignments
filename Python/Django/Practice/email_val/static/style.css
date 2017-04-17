@@ -1,0 +1,21 @@
+form {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+
+}
+body {
+  text-align: center;
+  padding:100px;
+}
+
+.flash {
+  text-align: center;
+  background-color: red;
+  display: inline;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

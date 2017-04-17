@@ -1,0 +1,16 @@
+table th {
+
+  text-align: left;
+}
+
+table td {
+  text-align: left;
+}
+
+.friends_list {
+  text-align: center !important;
+  display: block;
+}
+body {
+  position: relative;
+}

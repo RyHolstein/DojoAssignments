@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friends</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class='friends_list'>
+    <h1>Friends:</h1>
+    <table style="outline: 5px dotted red">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Friend Since</th>
+        </tr>
+        <tbody>
+          {% for friend in all_friends: %}
+          <tr>
+            <td>{{ friend['first_name'] }} {{ friend['last_name'] }} </td>
+            <td>{{ friend['age'] }}</td>
+            <td>{{ friend['friend_since'] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </thead>
+
+
+
+    </table>
+  </div>
+
+ <h1>Add A Friend</h1>
+
+
+  <form action='/friends' method='POST'>
+    <label for="first_name">First Name:<input type="text" name="first_name" id="first_name"></label>
+    <label for="last_name">Last Name:<input type="text" name="last_name" id="last_name"></label>
+    <label for="age">Age:<input type="text" name="age" name="age"></label>
+    <label for="friend_since">Friend Since:<input type="text" name="friend_since" id="friend_since"></label>
+    <input type="submit" value="Add">
+  </form>
+</body>
+</html>
