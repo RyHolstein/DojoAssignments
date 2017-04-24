@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>stuff</title>
+  </head>
+  <body>
+    <p>Pick a Number</p>
+
+    <form class="" action="/something" method="POST">
+      {% csrf_token %}
+      <input type="number" name="number">
+      <input type="submit" name="submit" value="submit">
+    </form>
+  </body>
+</html>

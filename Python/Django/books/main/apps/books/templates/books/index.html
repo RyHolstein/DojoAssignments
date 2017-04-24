@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dfd</title>
+  </head>
+  <body>
+    <h1>Working</h1>
+    <h1>is this working</h1>
+    {% for book in books %}
+    <p><b>Title:</b>{{book.name}} <b>Author:</b>{{book.author}} <b>Published:</b>{{book.published_date}} <b>Category:</b>{{book.category}}</p>
+    {% endfor %}
+  </body>
+</html>
