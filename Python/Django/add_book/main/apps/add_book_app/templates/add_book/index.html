@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% load staticfiles %}
+      <!-- The line above tells Django to be ready to listen for static files -->
+      <link rel="stylesheet" href="{% static 'add_book/css/style.css' %}"media="screen" title="no title"  charset="utf-8">
+    <title>this is working</title>
+  </head>
+  <body>
+
+
+<table>
+  <thead>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Category</th>
+  </thead>
+  <tbody>
+    {% for book in books %}
+    <tr>
+      <td>{{book.title}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.category}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<h1>Add A Book</h1>
+<div class="book_form">
+    <form class="book" action="/add_new_book" method="POST">
+       {% csrf_token %}
+      <label for="title">Title:<input type="text" name="title"></label>
+      <label for="title">Category<input type="text" name="category"></label>
+      <label for="title">Author<input type="text" name="author"></label>
+      <input type="submit" name="submit" value="Submit!">
+    </form>
+  </div>
+  </body>
+</html>

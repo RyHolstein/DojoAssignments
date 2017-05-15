@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>YOU MUST BE LOGGED IN TO VIEW THIS PAGE</h1>
+    <a href="/">LOGIN</a>
+  </body>
+</html>
+
+
+<!-- {% for x in messages %}
+
+  <div  class="messages">
+    <h3>{{x.message}} ({{x.like_num}}) likes</h3>
+    <p>{{x.m_like.user_id}}</p>
+      <form class="like_message_form" action="{% url 'liked' id=x.id%}" method="POST">
+        {% csrf_token %}
+        <input type="submit" name="like" value='LIKE'>
+      </form>
+      {% if x.user_id.id == request.session.id %}
+      <p>You Posted This</p>
+      <form class="delete_message" action="{%url 'm_delete' id=x.id%}" method="POST">
+       {% csrf_token %}
+      <input type="submit" name="delete" value="Delete">
+    </form>
+      {%else%}
+
+      {%endif%} -->
