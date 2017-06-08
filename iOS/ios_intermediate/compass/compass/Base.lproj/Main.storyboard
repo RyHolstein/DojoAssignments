@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="compass" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35k-nG-E7D">
+                                <rect key="frame" x="319" y="293" width="34" height="30"/>
+                                <state key="normal" title="East "/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIX-fr-lqR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBj-Kz-PaM">
+                                <rect key="frame" x="22" y="293" width="35" height="30"/>
+                                <state key="normal" title="West"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sk9-yl-Afj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84x-A6-Rh9">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
+                                <state key="normal" title="South"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tG8-s8-XGK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="API-Gg-Tnp">
+                                <rect key="frame" x="164" y="28" width="46" height="30"/>
+                                <state key="normal" title="North"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4lm-DS-mIS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8721975971" green="1" blue="0.94894315780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="84x-A6-Rh9" secondAttribute="bottom" constant="20" id="0OV-K6-w6G"/>
+                            <constraint firstItem="84x-A6-Rh9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="9HQ-Le-jdD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gBj-Kz-PaM" secondAttribute="bottom" constant="344" id="CYy-lu-agU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="84x-A6-Rh9" secondAttribute="trailing" constant="149" id="CZY-Es-wZs"/>
+                            <constraint firstItem="API-Gg-Tnp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="QKD-5M-Ohm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="35k-nG-E7D" secondAttribute="bottom" constant="344" id="XZs-yz-0lF"/>
+                            <constraint firstItem="API-Gg-Tnp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Zsc-MW-GCO"/>
+                            <constraint firstItem="gBj-Kz-PaM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="273" id="f1w-C0-ayY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="API-Gg-Tnp" secondAttribute="trailing" constant="149" id="gmf-Kw-edv"/>
+                            <constraint firstItem="gBj-Kz-PaM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="mxq-kB-FUI"/>
+                            <constraint firstItem="35k-nG-E7D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="273" id="qPh-Qh-Nc8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="35k-nG-E7D" secondAttribute="trailing" constant="6" id="rvZ-sF-kSN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Gdi-yN-aqI" kind="presentation" identifier="directionSegue" id="UXd-8g-0ub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Direction View Controller-->
+        <scene sceneID="QqN-Dm-O03">
+            <objects>
+                <viewController id="Gdi-yN-aqI" customClass="DirectionViewController" customModule="compass" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ffn-DR-2RY"/>
+                        <viewControllerLayoutGuide type="bottom" id="iEv-Mv-gWN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e3X-cE-8xq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dm-Y1-FOy">
+                                <rect key="frame" x="115" y="206" width="145" height="109"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="button">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZS-Wc-qNk">
+                                <rect key="frame" x="115" y="206" width="145" height="109"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="button">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionPressed:" destination="Gdi-yN-aqI" eventType="touchUpInside" id="U2u-xA-MKY"/>
+                                    <segue destination="LVt-I1-wgM" kind="unwind" unwindAction="goHomeWithSegue:" id="Eff-xF-fhO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8721975971" green="1" blue="0.94894315780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DZS-Wc-qNk" secondAttribute="trailing" constant="99" id="7Yi-j0-Ksc"/>
+                            <constraint firstItem="iEv-Mv-gWN" firstAttribute="top" secondItem="DZS-Wc-qNk" secondAttribute="bottom" constant="352" id="Gmm-Qi-dSA"/>
+                            <constraint firstItem="DZS-Wc-qNk" firstAttribute="firstBaseline" secondItem="1Dm-Y1-FOy" secondAttribute="baseline" id="N8S-lR-r4d"/>
+                            <constraint firstItem="DZS-Wc-qNk" firstAttribute="baseline" secondItem="1Dm-Y1-FOy" secondAttribute="firstBaseline" id="Pqa-JS-TS8"/>
+                            <constraint firstItem="DZS-Wc-qNk" firstAttribute="leading" secondItem="e3X-cE-8xq" secondAttribute="leadingMargin" constant="99" id="SKN-N1-gXJ"/>
+                            <constraint firstItem="DZS-Wc-qNk" firstAttribute="top" secondItem="1Dm-Y1-FOy" secondAttribute="top" id="g6U-WY-40z"/>
+                            <constraint firstItem="DZS-Wc-qNk" firstAttribute="top" secondItem="Ffn-DR-2RY" secondAttribute="bottom" constant="186" id="iQi-dF-INz"/>
+                            <constraint firstItem="DZS-Wc-qNk" firstAttribute="leading" secondItem="1Dm-Y1-FOy" secondAttribute="leading" id="pkw-6v-A2Z"/>
+                            <constraint firstItem="DZS-Wc-qNk" firstAttribute="trailing" secondItem="1Dm-Y1-FOy" secondAttribute="trailing" id="qkU-P9-kC1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goBackButton" destination="DZS-Wc-qNk" id="odC-5v-GTs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7X-4W-ILz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="LVt-I1-wgM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="760.79999999999995" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
