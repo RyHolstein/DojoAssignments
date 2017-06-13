@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>button game</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type ="text/javascript">
+        $(document).ready(function(){
+          var socket = io.connect();
+          var number_pressed = 0;
+          $('#button_add').click(function(){
+              number_pressed += 1;
+              $('#times').html('You have pressed the button '+number_pressed+' times');
+              console.log("Add Clicked");
+          });
+
+
+          $('#reset').click(function(){
+              number_pressed = 0;
+              $('#times').html('You have pressed the button '+number_pressed+' times');
+              console.log("reset Clicked");
+          });
+
+        });
+        </script>
+
+
+    <style media="screen">
+    #button_add {
+      background-color: green;
+      color: white;
+      font-size: 3em;
+      border: 1px;
+      border-radius: 10px;
+
+    }
+    #reset {
+      background-color: red;
+      color: white;
+      border: 1px;
+      border-radius: 25px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>the button game</h1>
+    <h3 id = "times">You have pressed the button 0 times</h3>
+    <button id = "button_add" type="button" name="button">Click ME</button>
+    <br>
+
+
+    <button id = "reset" type="button" name="reset">Reset the count</button>
+  </body>
+</html>

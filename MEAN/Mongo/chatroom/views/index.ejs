@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type ="text/javascript">
+            $(document).ready(function (){
+              var socket = io.connect();
+
+              (function() {
+                socket.emit("user_logged", {user:username});
+              })();
+              socket.on("message_list", function(data){
+                var list_message = data.messages
+                  for (var i = 0 ; i <list_message.length; i++){
+                    console.log();
+                    var new_message = list_message[i].user + ": " + list_message[i].message
+                    $('.chat_box').append("<p>" + new_message + "</p>")
+                  }
+
+
+                console.log(data);
+              })
+              $('#message_input').submit(function(){
+                var message = $('#input').val();
+                socket.emit("message_created", {user: username, message: message})
+                return false;
+
+              })
+              socket.on("message_post", function(data){
+                console.log(data.info);
+                var new_message = data.info.user + ": " + data.info.message
+                $('.chat_box').append("<p>" + new_message + "</p>")
+              })
+
+            })//end of document.ready
+        </script>
+        <style media="screen">
+          .chat_box {
+            display: inline-block;
+            width: 50%;
+            height: 500px;
+            border: 2px solid black
+          }
+          #input {
+            width: 47%;
+            display: inline-block;
+
+          }
+        </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var username;
+    (function() {
+      username = prompt("Please enter your username")
+    })();
+    </script>
+
+
+
+
+    <h1>Welcome to the chatroom</h1>
+    <div class="chat_box">
+
+    </div>
+    <form id = "message_input">
+      <input id= "input" type="text" name="message" placeholder="enter your message here">
+      <input type="submit" name="submit" value="submit">
+    </form>
+  </body>
+</html>
