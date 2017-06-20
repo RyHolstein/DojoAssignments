@@ -1,0 +1,38 @@
+h2 {
+  display: inline-block;
+  margin-left:0px;
+}
+form {
+  display: inline-block;
+  margin-bottom: 100px;
+  margin-left: 50px;
+}
+
+.slider {
+  width: 50%;
+  display: inline;
+}
+
+img {
+  width: 300px;
+  float: right;
+  margin-right: 100px;
+}
+
+
+.indicatior {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  vertical-align: bottom;
+  padding: 10px;
+}
+
+.section {
+  width: 100%;
+  vertical-align: bottom;
+  /*border: 2px solid red;*/
+  margin-left: 50px;
+
+}

@@ -1,0 +1,36 @@
+<p>
+  my-component works!
+</p>
+<h1>Registration</h1>
+
+<h2>Account Information</h2>
+
+<form (submit)='onSubmit()'>
+  {{ name.errors | json }}
+  {{ name.valid | json }}
+  <p>Name:<input
+    type="text"
+    name="name"
+    required
+    minlength="4"
+    maxlength="50"
+    [(ngModel)]="user.name"
+    #name="ngModel"
+    ></p>
+  {{ email.errors | json }}
+  {{ email.valid | json }}
+  <p>Email:<input
+    type="text"
+    name="Email"
+    required
+    [(ngModel)]="user.email"
+    #email="ngModel"
+    ></p>
+  <!-- <p>Password<input type="text" name="password" value=""></p> -->
+  <!-- <p>Confirm Password<input type="text" name="password_conformation" value=""></p> -->
+  <!-- <p>Street Address<input type="text" name="street" value=""></p> -->
+  <!-- <p>City<input type="text" name="city" value=""></p> -->
+  <input type="submit">
+</form>
+
+{{user | json}}

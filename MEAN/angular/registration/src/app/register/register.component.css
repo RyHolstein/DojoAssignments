@@ -1,0 +1,14 @@
+p {
+  display: inline-block;
+}
+.error-message {
+  color: red;
+}
+.message{
+  background-color: green;
+  display: inline-block;
+  color: white;
+  padding: 20px;
+
+
+}

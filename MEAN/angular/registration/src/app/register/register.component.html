@@ -1,0 +1,74 @@
+<h1>Registration</h1>
+
+<h2>Account Information</h2>
+
+<div *ngIf='message.display'class ="message">
+
+  <h2>{{ message.message }}</h2>
+  <h2>{{ message.sign }}</h2>
+
+
+</div>
+<form (submit)='onSubmit()'>
+
+  <p>*Name:<input
+    type="text"
+    name="name"
+    required
+    minlength="4"
+    maxlength="50"
+    [(ngModel)]="user.name"
+    #name="ngModel"
+    ></p>
+    <p class= "error-message"*ngIf='name.invalid  && name.touched '>Name field must be 4 characters</p>
+    <br>
+
+  <p>*Email:<input
+    type="text"
+    name="Email"
+    minlength="4"
+    maxlength="50"
+    required
+    [(ngModel)]="user.email"
+    #email="ngModel"
+    ></p>
+    <p class= "error-message" *ngIf='email.invalid && email.touched'>Must be valid email</p>
+    <br>
+
+  <p>*Password<input
+    type="text"
+    name="password"
+    required
+    minlength="4"
+    [(ngModel)]="user.password"
+    #password="ngModel"
+    ></p>
+    <p class= "error-message" *ngIf='password.invalid && email.touched'>Password must be filled and at least 4 char</p>
+    <br>
+
+  <p>*Confirm Password<input
+    type="text"
+    name="confirmPassword"
+    required
+    [(ngModel)]="user.confirmPassword"
+    #confirmPassword="ngModel"
+    ></p>
+  <p class= "error-message" *ngIf='user.confirmPassword != user.password'>Passwords Do Not Match</p>
+  <br>
+
+
+  <p>*Street Address<input
+    type="text"
+    name="street"
+    required
+    [(ngModel)]="user.street"
+    #street="ngModel"
+    ></p>
+    <p class= "error-message" *ngIf='street.invalid && street.touched'>Passwords Do Not Match</p>
+    <br>
+
+    *required
+  <input *ngIf="name.valid && email.valid && password.valid && street.valid" type="submit">
+</form>
+
+{{user.valid | json}}

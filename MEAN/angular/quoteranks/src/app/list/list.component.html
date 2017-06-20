@@ -1,0 +1,10 @@
+<h1>Quotes</h1>
+<div *ngFor= 'let quote of stuff, let i = index'>
+  <h3>{{ quote.quote }}</h3>
+  <h3>-{{ quote.author }}</h3>
+  <h4>{{quote.likes}} Votes</h4>
+
+  <button (click)='upVoteMe($event)' value={{i}}>Vote Up</button>
+  <button (click)='downVoteMe($event)' value={{i}}>Vote Down</button>
+  <button (click)='deleteMe($event)' value={{i}}>Delete</button>
+</div>

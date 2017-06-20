@@ -1,0 +1,22 @@
+
+<form (submit)= 'onSubmit($event)'>
+  <h2>Initial Power level </h2>
+  <p>1<input class = 'range'type="range" name="power_level" min ='1' max= '100' [(ngModel)]="powerlevel">100</p>
+  <input type="submit">
+</form>
+
+<img src="http://img02.deviantart.net/a727/i/2015/090/1/d/goku_2015_fnf_by_saodvd-d8nvxr3.png" alt="goku">
+
+
+
+
+
+<div class="section">
+
+<app-human class = 'indicatior' [myPower] = 'powerlevel'></app-human>
+<app-saiyan class = 'indicatior' [myPower] = 'powerlevel * 10'></app-saiyan>
+<app-supersaiyan class = 'indicatior'[myPower] = 'powerlevel * 90' ></app-supersaiyan>
+<app-supersaiyan2 class = 'indicatior' [myPower] = 'powerlevel * 150'></app-supersaiyan2>
+<app-supersaiyan3 class = 'indicatior' [myPower] = 'powerlevel * 250'></app-supersaiyan3>
+<app-supersaiyan4 class = 'indicatior'[myPower] = 'powerlevel * 500' ></app-supersaiyan4>
+</div>

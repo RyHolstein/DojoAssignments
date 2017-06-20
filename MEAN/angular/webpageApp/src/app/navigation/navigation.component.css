@@ -1,0 +1,11 @@
+.nav {
+}
+. {
+  display: inline-block;
+}
+
+button {
+  display: block;
+  width: 80%;
+  margin: 5%;
+}

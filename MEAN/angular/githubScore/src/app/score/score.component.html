@@ -1,0 +1,21 @@
+
+<h2>Github Score</h2>
+<form (submit)='getUser($event)'>
+  UserName: <input type="text" name="username" [(ngModel)] ='username'>
+  <input type="submit">
+</form>
+
+
+
+<p> Your Score: </p>
+<div *ngIf='user.followers != NaN'>
+<p>{{ user.followers + user.public_repos }}</p>
+<p class = "red" *ngIf=" user.followers + user.public_repos < 20">Needs Work</p>
+<p class = "orange" *ngIf=" user.followers + user.public_repos >= 20 &&  user.followers + user.public_repos < 50 ">A Decent Start</p>
+<p *ngIf=" user.followers + user.public_repos >= 50 &&  user.followers + user.public_repos < 100 ">Doing Good!</p>
+<p class = "green" *ngIf=" user.followers + user.public_repos >= 100 &&  user.followers + user.public_repos < 200 ">Great Job!</p>
+<p class = "blue" *ngIf="user.followers + user.public_repos >= 200 ">Github Elite</p>
+
+</div>
+
+<p class='red' *ngIf='isUser == "None"'> user does not exist</p>

@@ -1,0 +1,21 @@
+.switch {
+  border: none;
+  display: inline-block;
+  height: 25px;
+  width: 50px;
+  background-color: #DEB887;
+  text-align: center;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.button {
+  position: relative;
+}
+
+.on {
+  background-color: green;
+}
+.off {
+  background-color: red;
+}

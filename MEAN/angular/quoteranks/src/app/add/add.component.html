@@ -1,0 +1,23 @@
+<h1>Add a Quote</h1>
+<form (submit) = 'onSubmit($event)'>
+  <textarea
+  name="content"
+  rows="8" cols="80"
+  required
+  minlength="4"
+  [(ngModel)]= 'quote.content'
+  #content = 'ngModel'
+
+  ></textarea>
+  <p>Author <input
+  type="text"
+  name="author"
+  required
+  minlength="4"
+  [(ngModel)] = 'quote.author'
+  #author = 'ngModel'
+
+  ></p>
+
+  <input *ngIf='content.valid && author.valid 'type="submit">
+</form>
