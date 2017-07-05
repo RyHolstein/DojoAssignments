@@ -1,0 +1,20 @@
+<h3>Enter a New Message</h3>
+<form (submit)="createMessage()">
+  <textarea name="message" [(ngModel)]='message'></textarea>
+  <br>
+  <input type="submit">
+</form>
+
+<div class='message-div'*ngFor='let message of messages'>
+  <h4>{{ message._user.username }} {{ message.createdAt | date: 'mediumDate'}}</h4>
+  <h4>{{ message.content }}</h4>
+  <h3>Comments:</h3>
+  <div class="comment-divs" *ngFor='let comment of messages.comment'>
+    <p>{{ comment.content }}</p>
+  </div>
+  <form (submit)='newComment(message._id)'>
+      <textarea name="comment" [(ngModel)]='comment' ></textarea>
+      <input type="submit">
+  </form>
+
+</div>

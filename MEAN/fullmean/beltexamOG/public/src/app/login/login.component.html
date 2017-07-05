@@ -1,0 +1,7 @@
+
+<h1>Enter Your Username:</h1>
+<p *ngIf='errors != null' >{{ errors }}</p>
+<form (submit)='login()'>
+  <input type="text" name="name" [(ngModel)]='user.username'>
+  <input type="submit">
+</form>

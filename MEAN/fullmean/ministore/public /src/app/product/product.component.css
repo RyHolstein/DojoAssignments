@@ -1,0 +1,18 @@
+form {
+  width: 10%;
+  text-align: right;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.product-box {
+  display: inline-block;
+  width: 1000px;
+  border: 2px solid black;
+  height: 750px;
+  vertical-align: top;
+}
+
+.product-div {
+  
+}

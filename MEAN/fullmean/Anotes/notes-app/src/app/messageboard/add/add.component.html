@@ -1,0 +1,13 @@
+
+<div class="add-note-div">
+  <form (submit)="onSubmit()">
+    <p>Note:<br>
+    <textarea name="content" rows="1" cols="80"
+    [(ngModel)] = 'note.content'
+    #content = 'ngModel'
+    ></textarea>
+  </p>
+    <input type="submit">
+
+  </form>
+</div>

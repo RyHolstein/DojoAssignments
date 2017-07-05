@@ -1,0 +1,18 @@
+
+
+<h3>Add a New Product:</h3>
+
+<form (submit)='createProduct()'>
+  <p>Name: <input type="text" name="name" [(ngModel)]='product.name'></p>
+  <p>Image Url:<input type="text" name="imgUrl" [(ngModel)]='product.imageURL'></p>
+  <p>Description:<textarea name="description" [(ngModel)]='product.description'></textarea></p>
+  <p>Initial Stock:<input type="number" name="stock" [(ngModel)]='product.stocks'></p>
+  <input type="submit">
+</form>
+
+<div class="product-box">
+  <div *ngFor='let product of products' class="product-div">
+    <p>{{ product.name }}</p>
+    <p>{{ product.description }}</p>
+  </div>
+</div>
