@@ -5,13 +5,13 @@
     <title></title>
   </head>
   <body>
-    <h1>List of Mongi</h1>
+    <h1>People who have signed up</h1>
     <ul>
     <% for( var i = 0; i < animal.length; i++) {%>
-      <li> <b>Name:</b> <%= animal[i].name %> <br> <b>Biological Gender:</b> <%= animal[i].gender %> <a href="/mongooses/edit/<%= animal[i]._id %>">Edit</a> <a href="/mongooses/destroy/<%= animal[i]._id %>">Delete</a></li>
+      <li> <%= animal[i].name %> <%= animal[i].gender %> <a href="/mongooses/destroy/<%= animal[i]._id %>">Delete</a></li>
     <% } %>
     </ul>
 
-    <a href="/mongoose/new">Add a Mongoose</a>
+    <a href="/RSVP">Add a Name</a>
   </body>
 </html>

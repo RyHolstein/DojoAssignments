@@ -3,12 +3,14 @@
 var mongoose = require('mongoose');
 var Animal = mongoose.model("Animal")
 var Animals = require('./../controllers/animals')
+
+
 module.exports = function(app){
 
   //get routes
-  app.get('/', Animals.index);
+  app.get('/list', Animals.index);
   app.get('/mongooses/edit/:id', Animals.get_id);
-  app.get('/mongoose/new', Animals.create_new_page);
+  app.get('/', Animals.create_new_page);
   app.get('/mongooses/destroy/:id', Animals.delete);
 
   //post routes

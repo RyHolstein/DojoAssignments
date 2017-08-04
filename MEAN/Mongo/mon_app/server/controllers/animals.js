@@ -11,12 +11,21 @@ module.exports = {
   //create a new animal
   create : function(req, res){
     var animal = new Animal(req.body);
-    animal.save(function(err){
-      if (err){
-        console.log(err);
-        } else {
-        console.log("success");
-        res.redirect('/');
+    console.log("New user has been created ");
+    Animal.findOne({animal}, function(errors, foundAnimal){
+      if (errors){
+        console.log("not found");
+        animal.save(function(err){
+          if (err){
+            console.log(err);
+          } else {
+            console.log("success");
+            res.render('thankYou.ejs');
+
+          }
+        })
+      } else {
+        res.render('error.ejs')
       }
     })
   },
